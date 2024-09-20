@@ -1,9 +1,11 @@
 import DashboardBox from "@/components/DashboardBox";
+import Navbar from "../navbar/navbar";
 
 
 const Row2 = () => {
     return (
     <>
+   
              <DashboardBox gridArea="d" >
 
                 </DashboardBox>

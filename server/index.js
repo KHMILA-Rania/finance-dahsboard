@@ -26,7 +26,8 @@ app.use ("/kpi", kpiRoutes)
 
 
 const Port=process.env.PORT || 9000;
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true,
+    useUnifiedTopology: true,})
 .then(async()=>{
     app.listen(Port,()=>console.log(`Server Port: ${Port}`));
     /*await mongoose.connection.db.dropDatabase();

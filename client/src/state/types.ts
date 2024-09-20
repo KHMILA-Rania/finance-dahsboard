@@ -8,7 +8,6 @@ export interface ExpensesByCategory{
 export interface Month {
     id:string;
     month:string;
-
     revenue:string;
     expenses:number;
     nonOperationalExpenses:number;
